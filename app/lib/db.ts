@@ -19,7 +19,7 @@ const connectDB = async () => {
     });
   }
   try {
-    cached.promise = await cached.promise;
+    cached.conn = await cached.promise;
   }
   catch (err) {
     throw err;
